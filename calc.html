@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    
+  <div class="container ">
+  
+      <div class="row ">
+        <input type="text" placeholder="0" id="white-area" class="white-area col-sm-12">
+      </div>
+      <div class="row ">
+        <button onclick="clr()" id="ac" class="gray col-sm-3">Ac</button>
+        <button onclick="del()" id="del" class="gray col-sm-3">Del</button>
+        <button onclick="getOperator('%')" id="pres" class="gray col-sm-3">%</button>
+        <button onclick="getOperator('/')" id="div"  class="op col-sm-2">/</button>
+      </div>
+       <div class="row">
+        <button onclick="getNum(7)"  id="7" class="col-sm-3">7</button>
+        <button onclick="getNum(8)"  id="8" class="col-sm-3">8</button>
+        <button onclick="getNum(9)"  id="9" class="col-sm-3">9</button>
+        <button onclick="getOperator('*')"  id="mul" class="op col-sm-2">*</button>
+       </div>
+      <div class="row">
+        <button onclick="getNum(4)"  id="4"class="col-sm-3">4</button>
+        <button onclick="getNum(5)"id="5"class="col-sm-3">5</button>
+        <button onclick="getNum(6)" id="6"class="col-sm-3">6</button>
+        <button onclick="getOperator('-')"  id="mun"class="op col-sm-2">-</button>
+      </div>
+       <div class="row">
+        <button onclick="getNum(1)" id="1" class="col-sm-3">1</button>
+        <button onclick="getNum(2)" id="2" class="col-sm-3">2</button>
+        <button onclick="getNum(3)" id="3" class="col-sm-3">3</button>
+        <button onclick="getOperator('+')" id="plus" class="op col-sm-2">+</button>
+       </div>
+        <div class="row">
+          <button onclick="getNum(0)" id="0" class="zero col-sm-5">0</button>
+          <button   id="dec" class="col-sm-2">.</button>
+          <button onclick=" clac()"  id="equal" class="op col-sm-3">=</button>
+        </div>
+    
+  </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
